@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-q81-nzoraid%jnzu=bl^0!0f6tvcm)!4zu=8*t^u6#@!^zj0r*
 DEBUG = True
 
 
-CSRF_TRUSTED_ORIGINS = ['https://stock-awwe.onrender.com']
+CSRF_TRUSTED_ORIGINS = ['https://gestock.onrender.com']
 
 
 ALLOWED_HOSTS = ['*']
