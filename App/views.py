@@ -282,6 +282,12 @@ def icons(request):
 def fact(request):
     if not request.user.is_authenticated:
          return redirect('home_login')
+    if request.method == 'POST':
+            startDate = request.POST.get('startDate')
+            endDate = request.POST.get('endDate')
+            factures = Facture.objects.filter(date__gte=startDate, date__lte=endDate)
+            # Pass the queryset to the template for rendering
+            return render(request, 'home/fact.html', {'segment':'fact', 'factures':factures})
     factures = Facture.objects.all()
     return render(request, 'home/fact.html', {'segment':'fact', 'factures':factures})
 
