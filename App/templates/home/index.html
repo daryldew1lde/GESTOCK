@@ -5,7 +5,9 @@
 {% block title %} index {% endblock %} 
 
 <!-- Specific Page CSS goes HERE  -->
-{% block stylesheets %}{% endblock stylesheets %}
+{% block stylesheets %}
+
+{% endblock stylesheets %}
 
 {% block content %}
 
@@ -17,7 +19,7 @@
             <h2 class="card-title"> Liste des produits</h2>
           </div>
           <div class="card-body">
-            <div class="table-responsive export-table">
+            <div class="table-responsive export-table" style="overflow-x:auto;">
               <table  id="file-datatable" class="table table-bordered text-nowrap key-buttons border-bottom w-100" data-ordering="false">
                 <thead class="table-head">
                   <tr>

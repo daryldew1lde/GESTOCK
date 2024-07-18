@@ -10,8 +10,8 @@
     <div class="content">
         <div class="row">
             {% for produit in produits %}  
-                <div class="col-3">
-                    <div class="card" style="width:350px">
+                <div class="col-12 col-sm-6  col-md-4 col-xl-3">
+                    <div class="card" >
                         <img src="{{ produit.image.url }}" alt="{{ produit.nom }} Image" style="height:250px">
                         <div class="card-body">
                         <h4 class="card-title">{{produit.nom}}</h4>
